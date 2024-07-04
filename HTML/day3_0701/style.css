@@ -1,0 +1,37 @@
+
+*{
+    background-color: #aaa;
+    /* color: rgb(182, 37, 168); */
+}
+.test{
+    background-color: gold;
+    color: rgb(192, 47, 47);
+    /* color:blue; */
+}
+
+html{
+    /* background-color: aqua; */
+}
+
+body{
+    background-color: red;
+    /* color: aqua; */
+}
+h1{
+    /* background-color: blue; */
+}
+
+.color{color: blueviolet;}
+
+div ~ p{
+    color: blueviolet;
+    background-color: yellowgreen;
+}
+
+.color .first,.second{
+    color:green;
+}
+
+.boxx :first-child{
+    color:tomato;
+}

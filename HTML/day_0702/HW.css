@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Microsoft JhengHei;
+}
+header{
+    width: 100vw;
+    background-color: black;
+}
+header nav{
+    margin: auto;
+    width: fit-content;
+}
+header nav ul li {
+    display: inline-block;
+    line-height: 3;
+    font-size: 16px;
+    font-weight: 800;  
+    padding: 10px;
+    margin: 0 10px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none; 
+}
+header nav ul li a:hover{
+    transition: .5s;
+    color:rgb(228, 179, 119)
+}
+
+
+
+
+section{
+    padding: 50px ;
+    max-width: 1000px;
+    margin: auto;
+}
+.intro .outside{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intro .outside .card{
+    max-width:300px;
+    border: 1px silver solid;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 40px;
+    margin:10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in-out;
+}
+
+.intro .outside .card .pic{
+    margin-top: 30px;
+    padding: 20px;
+}
+.intro .outside .card .pic img{
+    border-radius: 50%;
+}
+
+.intro .outside .card p{
+    padding-bottom: 10px;
+    margin:20px;
+}
+.intro .outside .card a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(231, 140, 28);
+    padding: 10px;
+}
+.intro .outside .card:hover{
+    background:url(https://picsum.photos/600/800);
+    background-color: rgb(231, 140, 28);
+    /* background-image: url(https://picsum.photos/600/800); */
+    /* opacity: .7; */
+    color: white;
+    /* transition: .5s ease; */
+}
+
+.intro .outside .card:hover a{
+    border-color: white;
+}
+
+.about .outside{
+    font-size: 0;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.about .outside .pic{
+    display: inline-block;
+    max-width: 400px;
+    height: 500px;
+    overflow: hidden;
+    vertical-align:middle;
+}
+.about .outside .content{
+    font-size: 15px;
+    display: inline-block;
+    max-width: 600px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    vertical-align:middle;
+}
+.about .outside .content ._title{
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+.about .outside .content h5{
+    color: #cda274;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about .outside .content h3{
+    font-size: 42px;
+    margin-top: 0;
+    font-weight: 400;
+    padding: 10px 0;
+}
+.about .outside .content h2{
+    font-size: 25px;
+    font-weight: 400;
+    width: 100%;
+}
+.about .outside .content span{
+    color: #cda274;
+}
+
+.about .outside .content p{
+    line-height: 2;
+}
+.about .outside .content ul{
+    padding: 30px 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+    height: 100px;
+    white-space: pre;
+}
+.about .outside .content i{
+    color: rgb(231, 140, 28);
+}
+.about .outside .content a{
+    top: 10px;
+    left: 10px;
+    position:relative;
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgb(231, 140, 28);
+    padding: 10px;
+}
+
+
+.team .title{
+    padding-bottom: 30px;
+}
+.team .title h5{
+    font-size: 18px;
+    color: rgb(231, 140, 28);
+}
+.team .title h3,span{
+    font-size: 40px;
+    font-weight: 400;
+}
+.team .title span{
+    color: rgb(231, 140, 28);
+}
+
+.team .content{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.team .content .card{
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f7f7e7;
+    width: fit-content;
+}
+
+.team .content .pic{
+    width: 250px;
+    height: 400px;
+    overflow: hidden;
+}
+.team .content .name{
+    text-align: center;
+    padding-bottom: 30px;       
+}
+.team .content .name h3{
+    padding: 20px;
+}
+.team .content .name a{
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 350;
+}
+.team .content .name span{
+    color: rgb(231, 140, 28);
+    text-decoration: none;
+    font-size: 16px;
+}

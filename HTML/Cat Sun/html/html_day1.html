@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--內容隨視窗大家換行: ctrl + shift + p => View:Toggle World World -->
+    <!-- HTML 寫法 -->
+    <!-- 引用區塊（blockquote）/ 引文（q） -->
+     <blockquote cite="#" id="quote">引言</blockquote>
+     <q cite="#">引言</q>
+     
+    <!-- 影片(video) / 音樂 (audio) -->
+     <video controls src="#" width="250px" loop muted autoplay>video</video>
+    <!-- Source 與 Video -->
+     <video controls width="250px">
+        <source src="#" type="video/webm">
+        <source src="#" type="video/mp4">
+        不支援影片的文字
+     </video>
+
+     
+    
+
+    <!-- 圖片標籤 (img) -->
+    <img width="400px" src="../img/LINE_ALBUM_白雪村找白雪公主_240219_1_Crop Image.jpg" alt="替代字元">
+    <img src="/LINE_ALBUM_馬博嘆息灣閃颱風_240219_1_Crop Image.jpg" alt="替代文字" width="400px">
+    <!-- picture 與 img -->
+     <picture>
+        <source srcset="" media="(max-width:500px)">
+        <source srcset="" media="(max-width:800px)">
+        <img src="" alt="">
+     </picture>
+
+
+    <!-- Emmet 快速輸入語法介紹 part 1 -->
+    <!-- ---------------- -->
+     
+    <!-- 產一個帶有 alt 屬性的 img 標籤 -->
+     <img src="" alt="替代文字">
+    <!-- 跟大標題同一層段落 -->
+     <h1>標題</h1>
+     <p>內文</p>
+    <!-- 一次產出三個段落 -->
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <!-- 有序清單 (ol)、無序清單 (ul)、描述清單(dl / dt / dd) -->
+    <!-- ---------------- -->
+    <!-- 有序清單 ol、li -->
+     <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ol>
+    <!-- 無序清單 ul、li-->
+     <ul>
+        <li></li>
+     </ul>
+     <ul>
+        <li></li>
+     </ul>
+    <!-- 描述清單 dl、dt、dd -->
+     <dl>
+        <dt>apple</dt>
+        <dd>A kind of fruits</dd>
+     </dl>
+
+
+    <!-- Emmet 快速輸入語法介紹 part 2 -->
+    <!-- ---------------- -->
+    <!-- ul 下有一個 li -->
+     <ul>
+        <li></li>
+     </ul>
+    <!-- ul 下有三個 li -->
+     <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+     </ul>
+    <!-- 產出兩個同層的 ul -->
+     <!-- ul*2>(li{$})*3 -->
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+     </ul>
+     <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+     </ul>
+    <!-- 產出不同內容的兩個同層 ul 分組寫法 -->
+    <!-- 產出不同內容的兩個同層 ul 回上層寫法 -->
+
+    <!-- 表格標籤 (table / thead / tbody / tfoot / tr / th / th) -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>English</th>
+                <th>Histroy</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Tom</th>
+                <td>60</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th>Amy</th>
+                <td>20</td>
+                <td>100</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+     </table>
+    <!-- ---------------- -->
+
+
+    <!-- 超連結(a) -->
+    <!-- ---------------- -->
+    <!-- 連到同一頁上的某個 id 錨點 -->
+    <a href="#quote">點我到這頁另一個地方</a>
+    <!-- 連到相對路徑上的其他 html 頁面 -->
+    <a href="link.html">點我到其他網頁</a>
+    <!-- 連到相對路徑上的其他 html 頁面的某個 id 錨點 -->
+    <a href="link.html#comeHere">點我到其他網頁的特定位置</a>
+    <!-- 連結到網址 -->
+     <a href="https://www.google.com">Google</a>
+    <!-- 點擊後撥電話 -->
+     <a href="tel:0988403696">打電話給我</a>
+    <!-- 點擊後開啟電子郵件並帶入信箱 -->
+     <a href="mailto:billbilltw@gmail.com">寄郵件給我</a>
+    <!-- 圖片連結 -->
+     <a href="https://www.google.com/search?q=%E6%A7%8D%E5%B2%B3&rlz=1C1ONGR_zh-TWTW1081TW1081&oq=%E6%A7%8D%E5%B2%B3&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyBwgBEC4YgAQyBwgCEAAYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBwgFEAAYgAQyBwgGEAAYgAQyBwgHEAAYgAQyBwgIEAAYgAQyBwgJEAAYgASoAgCwAgA&sourceid=chrome&ie=UTF-8" target="_blank"><img src="LINE_ALBUM_穗槍上上下下有夠累的_240219_1_Crop Image.jpg" alt="" width="600px" ></a>
+
+
+    <!-- HTML 區塊 -->
+    <!-- ---------------- -->
+    <!-- 頁首(header) -->
+     <header>
+      <img src="" alt="" class="logo">
+      <nav>
+         <ul>
+            <li>線上課程</li>
+            <li>線上課程</li>
+            <li>線上課程</li>
+            <li>線上課程</li>
+            <li>線上課程</li>
+            <li>線上課程</li>
+         </ul>
+      </nav>
+     </header>
+    <!-- 頁尾(footer) -->
+     <footer>      
+     </footer>
+    <!-- 導覽列(nav) -->
+
+    <!-- 主要內容(main) -->
+    <!-- 側邊欄區塊(aside) -->
+    <!-- 文章區塊(article) -->
+    <!-- 章節區塊(section) -->
+     <!-- 沒有更具體的語意標籤可使用時可使用 -->
+    <!-- 內容相關的獨立區塊（figure / figcaption） -->
+    <!-- figure -->
+    <!-- figure 與 figcaption -->
+    <figure>
+     <img src="" alt="">
+     <figcaption>圖片的解釋文字</figcaption>
+    </figure>
+    <!-- 內容分區區塊(div / span) -->
+     <div>這兩者一個會換行一個不會</div>
+
+    <!-- HTML 表單 -->
+    <!-- ---------------- -->
+    <!-- 表單元素(form) -->
+     <form action="表單位置">
+        <!-- 表單輸入元素(input) -->
+        <!-- 一般文字 -->
+         <div>
+            Text:
+            <input type="text" placeholder="輸入隨意文字" required>
+         </div>
+        <!-- 密碼 -->
+        <div>
+            Password:
+            <input type="password" minlength="8">
+        </div>
+        <!-- 數字 -->
+         <div>
+            Number:
+            <input type="number" >
+        </div>
+        <!-- 電話號碼 -->
+         <div>
+            Tel:
+            <input type="tel" >
+        </div>
+        <!-- mail -->
+         <div>
+            Email:
+            <input type="email" >
+        </div>         
+        <!-- url -->
+         <div>
+            URL:
+            <input type="url" >
+        </div>
+        <!-- 日期 -->
+         <div>
+            Date:
+            <input type="date" >
+        </div>
+        <!-- 時間 -->
+         <div>
+            Time:
+            <input type="time" >
+        </div>
+        <!-- 顏色 -->
+         <div>
+            Color:
+            <input type="color" >
+        </div>
+        <!-- 範圍 -->
+         <div>
+            Range:
+            <input type="range" min="" max=""step="10">
+        </div>
+        <!-- 上傳文件 -->
+         <div>
+            File:
+            <input type="file" >
+        </div>
+        <!-- 多選 -->
+         <div>
+            Checkbox:
+            <input type="checkbox" id="choice1" name="question" value="choice1" checked>
+            <label for="choice1">choice1</label>
+            <input type="checkbox" id="choice2" name="question" value="choice2">
+            <label for="choice2">choice2</label>
+        </div>
+        <!-- 單選 -->
+        <div>
+            Radio:
+            <input type="radio" id="choice3" name="question" value="choice3" checked>
+            <label for="choice3">choice3</label>
+            <input type="radio" id="choice4" name="question" value="choice4">
+            <label for="choice4">choice4</label>
+        </div>
+        <!-- 搜尋 -->
+        <div>
+            Search:
+            <input type="search">
+        </div>
+        
+        <!-- 下拉選單 -->
+         <select name="" id="">
+            <option value="1">Select 1</option>
+            <option value="2" selected>Select 2</option>
+            <option value="3">Select 3</option>
+         </select>
+         <!-- label 用法 -->
+        <!-- label for 用法 -->
+         <p>
+            <label>
+               <input type="checkbox" value="1" name="question">選項一
+            </label>
+            <label>
+               <input type="checkbox" value="2" name="question">選項二
+            </label>
+         </p>
+         <!-- 送出按鈕 -->
+         <input type="submit" value="點擊這裡送出表單">
+         <!-- 清空按鈕 -->
+         <input type="reset" value="清空表單">
+         <!-- 普通按鈕 -->
+         <input type="button" value="一般按鈕">
+         <button >按鈕</button>
+     </form>
+
+        
+     
+         <!-- Emmet 快速輸入語法介紹 part 3 -->
+         <!-- ---------------- -->
+         <!-- 創造一個 id 為 idName 且 class 為 className 的 p 標籤 -->
+         <p id="idName" class="classname"></p>
+         <!-- 產生 4 個 class 為 className1 到 className4 的 p 標籤 -->
+         <p class="className1"></p>
+         <p class="className2"></p>
+         <p class="className3"></p>
+         <p class="className4"></p>
+      </body>
+</html>

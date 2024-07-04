@@ -1,0 +1,106 @@
+body{
+    background-color:#aaa;
+}
+h1 + p{
+    font-size: 30px;
+    line-height: 1.5;
+    text-indent: 30px;
+}
+span{
+    font-size: 1.5em;
+    font-style: italic;
+}
+/* X em:相對於父層，縮放X倍 */
+/* X rem:相對於root，縮放X倍 */
+/* vw,vh:視窗大小的相對值 */
+
+.test p{
+    background-color: pink;
+    line-height: 1.5;
+    text-align: center;
+    /* margin: auto;
+    width: 50%; */
+}
+
+
+.box{
+    width: 800px;
+    height: 800px;
+    background-color: goldenrod;
+    background-image: url(https://picsum.photos/200/200);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%;
+}
+
+.box1{
+    width: 800px;
+    height: 800px;
+    background:#000 url(https://picsum.photos/600/800) no-repeat center /600px;
+}
+
+.box2{
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+.box3{
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    /* border-bottom-width: 10px;
+    border-bottom-color: blue;
+    border-bottom-style: dashed; */
+    border-left: blue 10px dashed;
+}
+
+.box4{
+    background-color: green;
+    width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    /* VS box-sizing:content-box */
+}
+
+.box5{
+    font-size: 0;
+    vertical-align: middle;
+    /* 解決小bug */
+}
+.box5 span{
+    /* inline */
+    font-size: 20px;
+    background-color: blanchedalmond;
+}
+
+.box5 div{
+    /* block */
+    font-size: 20px;
+    background-color: blanchedalmond;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    
+}
+
+section{
+    width: 100vw;
+    /* margin: auto; */
+    border: red 1px solid;
+    font-size: 0;
+}
+.outside{
+    padding:5px;
+    margin: auto;
+    width: fit-content;
+    
+}
+.inside{
+    display: inline-block;
+    width: 266px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    font-size: 20px;
+    background-color: yellowgreen;
+    vertical-align: middle;
+}
