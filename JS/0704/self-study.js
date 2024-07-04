@@ -14,6 +14,10 @@ document.addEventListener("DOMContentLoaded",() => {
     const clickMe2=function (){
         console.log("被按了2")
     }
+
+    const clickMe3=function (){
+        console.log("被按了3")
+    }
     // addEventListener系列，函式會疊加
     btn.addEventListener("click",clickMe)
     btn.addEventListener("click",clickMe2)
